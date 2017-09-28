@@ -1,0 +1,276 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=6.5",
+    "npm": ">=3.10"
+  },
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie < 9"
+  ],
+  "dependencies": {
+    "async": "1.5.2",
+    "axios": "^0.16.2",
+    "babel-polyfill": "^6.22.0",
+    "bcryptjs": "2.3.0",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.16.0",
+    "bytes": "2.3.0",
+    "classnames": "^2.2.5",
+    "colors": "1.1.2",
+    "compression": "1.6.1",
+    "connect-busboy": "0.0.2",
+    "connect-mongo": "0.8.2",
+    "connect-redis": "3.1.0",
+    "cookie-parser": "^1.4.3",
+    "core-js": "^2.4.1",
+    "cors": "2.7.1",
+    "csurf": "1.8.3",
+    "data2xml": "1.2.2",
+    "ejs": "2.4.1",
+    "ejs-mate": "2.3.0",
+    "errorhandler": "1.4.3",
+    "express": "^4.14.1",
+    "express-session": "1.12.1",
+    "fastclick": "^1.0.6",
+    "gm": "^1.20.0",
+    "helmet": "1.1.0",
+    "highlight.js": "9.8.0",
+    "history": "^4.5.1",
+    "http": "0.0.0",
+    "ioredis": "1.14.0",
+    "isomorphic-style-loader": "^1.1.0",
+    "jpush-sdk": "3.2.1",
+    "js-yaml": "3.5.2",
+    "jsonwebtoken": "^7.2.1",
+    "loader": "2.1.1",
+    "loader-builder": "1.2.1",
+    "lodash": "4.0.0",
+    "log4js": "1.1.0",
+    "markdown-it": "6.0.0",
+    "markdown-it-block-image": "0.0.3",
+    "markdown-it-center-text": "1.0.3",
+    "markdown-it-container": "2.0.0",
+    "markdown-it-emoji": "1.3.0",
+    "markdown-it-html5-embed": "0.3.2",
+    "markdown-it-underline": "1.0.1",
+    "memory-cache": "0.1.4",
+    "method-override": "2.3.5",
+    "moment": "2.11.0",
+    "mongoose": "4.8.5",
+    "mpromise": "0.5.4",
+    "multiline": "1.0.2",
+    "node-fetch": "^1.6.3",
+    "node-uuid": "1.4.7",
+    "nodemailer": "2.0.0",
+    "nodemailer-smtp-transport": "1.1.0",
+    "normalize.css": "^5.0.0",
+    "oneapm": "1.2.19",
+    "pg": "4.5.1",
+    "pm2": "1.1.3",
+    "postcss-url": "5.0.2",
+    "power-assert": "1.4.1",
+    "pretty-error": "^2.0.2",
+    "qn": "1.1.1",
+    "qr-image": "^3.2.0",
+    "qs": "^6.5.0",
+    "query-string": "^4.3.1",
+    "rctui": "0.6.8",
+    "react": "^15.4.2",
+    "react-bootstrap": "0.30.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "5.0.3",
+    "ready": "0.1.1",
+    "redux": "3.6.0",
+    "redux-actions": "2.0.1",
+    "redux-logger": "2.8.2",
+    "redux-promise": "0.5.3",
+    "redux-thunk": "2.2.0",
+    "replace": "0.3.0",
+    "request": "2.67.0",
+    "response-time": "2.3.1",
+    "source-map-support": "^0.4.11",
+    "superagent": "3.5.0",
+    "universal-router": "^2.0.0",
+    "utility": "1.12.0",
+    "validator": "4.5.0",
+    "whatwg-fetch": "^2.0.2",
+    "xmlbuilder": "4.2.1",
+    "xss": "0.2.10"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.5.1",
+    "autoprefixer": "^6.7.2",
+    "babel-cli": "6.24.0",
+    "babel-core": "6.24.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-rewire": "^1.0.0",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-react-optimize": "^1.0.1",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "babel-template": "^6.22.0",
+    "babel-types": "^6.22.0",
+    "browser-sync": "^2.18.7",
+    "chai": "^3.5.0",
+    "chokidar": "^1.6.1",
+    "css-loader": "^0.26.1",
+    "editorconfig-tools": "^0.1.1",
+    "enzyme": "^2.7.1",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-css-modules": "^2.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "file-loader": "^0.10.0",
+    "front-matter": "^2.1.2",
+    "glob": "^7.1.1",
+    "json-loader": "^0.5.4",
+    "lint-staged": "^3.3.0",
+    "markdown-it": "^8.2.2",
+    "mkdirp": "^0.5.1",
+    "mocha": "^3.2.0",
+    "pixrem": "^3.0.2",
+    "pleeease-filters": "^3.0.0",
+    "postcss": "^5.2.12",
+    "postcss-calc": "^5.3.1",
+    "postcss-color-function": "^3.0.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.2",
+    "postcss-custom-selectors": "^3.0.0",
+    "postcss-flexbugs-fixes": "^2.1.0",
+    "postcss-global-import": "^1.0.0",
+    "postcss-import": "^9.1.0",
+    "postcss-loader": "^1.2.2",
+    "postcss-media-minmax": "^2.1.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-nesting": "^2.3.1",
+    "postcss-pseudoelements": "^3.0.0",
+    "postcss-selector-matches": "^2.0.5",
+    "postcss-selector-not": "^2.0.0",
+    "pre-commit": "^1.2.2",
+    "raw-loader": "^0.5.1",
+    "react-addons-test-utils": "^15.4.2",
+    "react-deep-force-update": "^2.0.1",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "redbox-react": "^1.3.3",
+    "rimraf": "^2.5.4",
+    "sinon": "^2.0.0-pre.5",
+    "stylefmt": "^5.1.1",
+    "stylelint": "^7.8.0",
+    "stylelint-config-standard": "^16.0.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-bundle-analyzer": "^2.3.0",
+    "webpack-dev-middleware": "^1.10.0",
+    "webpack-hot-middleware": "^2.16.1",
+    "write-file-webpack-plugin": "^3.4.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "stage-2",
+      "react"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "rewire"
+        ]
+      }
+    }
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "airbnb",
+      "plugin:css-modules/recommended"
+    ],
+    "plugins": [
+      "css-modules"
+    ],
+    "globals": {
+      "__DEV__": true
+    },
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "import/extensions": "off",
+      "import/no-extraneous-dependencies": "off",
+      "react/jsx-filename-extension": "off",
+      "react/prefer-stateless-function": "off"
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "string-quotes": "single",
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "composes"
+          ]
+        }
+      ],
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "global"
+          ]
+        }
+      ]
+    }
+  },
+  "pre-commit": "lint:staged",
+  "lint-staged": {
+    "*.{cmd,html,json,md,sh,txt,xml,yml}": [
+      "editorconfig-tools fix",
+      "git add"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{css,less,scss,sss}": [
+      "stylefmt",
+      "stylelint",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "lint:js": "eslint src tools",
+    "lint:css": "stylelint \"src/**/*.{css,less,scss,sss}\"",
+    "lint:staged": "lint-staged",
+    "lint": "yarn run lint:js && yarn run lint:css",
+    "test": "mocha \"src/**/*.test.js\" --require babel-register --require test/setup.js",
+    "test:watch": "yarn run test -- --reporter min --watch",
+    "clean": "babel-node tools/run clean",
+    "copy": "babel-node tools/run copy",
+    "bundle": "babel-node tools/run bundle",
+    "build": "babel-node tools/run build",
+    "build:stats": "yarn run build -- --release --analyse",
+    "deploy": "babel-node tools/run deploy",
+    "render": "babel-node tools/run render",
+    "serve": "babel-node tools/run runServer",
+    "start": "babel-node tools/run start",
+    "start pre": "babel-node tools/run pre-start"
+  }
+}

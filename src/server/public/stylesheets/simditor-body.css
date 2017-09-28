@@ -1,0 +1,323 @@
+.faqs_content .simditor-body {
+  font-size: 14px;
+  outline: none;
+  cursor: text;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
+.faqs_content a.selected,
+.faqs_content .simditor-body a.selected {
+  background: #b3d4fd;
+}
+
+.faqs_content a.simditor-mention,
+.faqs_content .simditor-body a.simditor-mention {
+  cursor: pointer;
+}
+
+.faqs_content .simditor-table,
+.faqs_content .simditor-body .simditor-table {
+  position: relative;
+}
+
+.faqs_content .simditor-table.resizing,
+.faqs_content .simditor-body .simditor-table.resizing {
+  cursor: col-resize;
+}
+
+.faqs_content .simditor-table .simditor-resize-handle,
+.faqs_content .simditor-body .simditor-table .simditor-resize-handle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  cursor: col-resize;
+}
+
+.faqs_content pre,
+.faqs_content .simditor-body pre {
+
+  /*min-height: 28px;*/
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  word-wrap: break-word !important;
+  white-space: pre-wrap !important;
+}
+
+.faqs_content img,
+.faqs_content .simditor-body img {
+  width: 100%;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.faqs_content img.selected,
+.faqs_content .simditor-body img.selected {
+  box-shadow: 0 0 0 4px #9fb2c3;
+}
+
+.faqs_content .simditor-body {
+  line-height: 1.8 !important;
+  color: #6c7c8b;
+  outline: none;
+  word-wrap: break-word;
+}
+
+.faqs_content > :first-child,
+.faqs_content .simditor-body > :first-child {
+  margin-top: 0 !important;
+}
+
+.faqs_content a,
+.faqs_content .simditor-body a {
+  color: #4298ba;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.faqs_content a:visited,
+.faqs_content .simditor-body a:visited {
+  color: #4298ba;
+}
+
+.faqs_content a:hover,
+.faqs_content .simditor-body a:hover {
+  color: #0f769f;
+}
+
+.faqs_content a:active,
+.faqs_content .simditor-body a:active {
+  color: #9e792e;
+}
+
+.faqs_content a:hover,
+.faqs_content .simditor-body a:hover,
+a:active,
+.faqs_content .simditor-body a:active {
+  outline: 0;
+}
+
+.faqs_content h1,
+.faqs_content .simditor-body h1,
+h2,
+.faqs_content .simditor-body h2,
+h3,
+.faqs_content .simditor-body h3,
+h4,
+.faqs_content .simditor-body h4,
+h5,
+.faqs_content .simditor-body h5,
+h6,
+.faqs_content .simditor-body h6 {
+  font-weight: normal;
+  margin: 40px 0 20px;
+  color: #000;
+}
+
+.faqs_content h1,
+.faqs_content .simditor-body h1 {
+  font-size: 24px;
+}
+
+.faqs_content h2,
+.faqs_content .simditor-body h2 {
+  font-size: 22px;
+}
+
+.faqs_content h3,
+.faqs_content .simditor-body h3 {
+  font-size: 20px;
+}
+
+.faqs_content h4,
+.faqs_content .simditor-body h4 {
+  font-size: 18px;
+}
+
+.faqs_content h5,
+.faqs_content .simditor-body h5 {
+  font-size: 16px;
+}
+
+.faqs_content h6,
+.faqs_content .simditor-body h6 {
+  font-size: 16px;
+}
+
+.faqs_content p,
+.faqs_content .simditor-body p,
+div,
+.faqs_content .simditor-body div {
+  margin: 0;
+  color: #6c7c8b;
+  word-wrap: break-word;
+}
+
+.faqs_content b,
+.faqs_content .simditor-body b,
+strong,
+.faqs_content .simditor-body strong {
+  font-weight: bold;
+}
+
+.faqs_content i,
+.faqs_content .simditor-body i,
+em,
+.faqs_content .simditor-body em {
+  font-style: italic;
+}
+
+.faqs_content u,
+.faqs_content .simditor-body u {
+  text-decoration: underline;
+}
+
+.faqs_content strike,
+.faqs_content .simditor-body strike,
+del,
+.faqs_content .simditor-body del,
+s,
+.faqs_content .simditor-body s {
+  text-decoration: line-through;
+}
+
+.faqs_content ul,
+.faqs_content .simditor-body ul,
+ol,
+.faqs_content .simditor-body ol {
+  list-style: circle outside none;
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  line-height: 1.6;
+}
+
+.faqs_content ul ul,
+.faqs_content .simditor-body ul ul,
+ol ul,
+.faqs_content .simditor-body ol ul,
+ul ol,
+.faqs_content .simditor-body ul ol,
+ol ol,
+.faqs_content .simditor-body ol ol {
+  line-height: 1.8 !important;
+  padding-left: 30px;
+}
+
+.faqs_content ul ul,
+.faqs_content .simditor-body ul ul,
+ol ul,
+.faqs_content .simditor-body ol ul {
+  list-style: disc outside none;
+}
+
+.faqs_content ul ul ul,
+.faqs_content .simditor-body ul ul ul,
+ol ul ul,
+.faqs_content .simditor-body ol ul ul {
+  list-style: square outside none;
+}
+
+.faqs_content ol,
+.faqs_content .simditor-body ol {
+  list-style: decimal;
+}
+
+.faqs_content blockquote,
+.faqs_content .simditor-body blockquote {
+  border-left: 3px solid #ddd;
+  padding: 5px 0 5px 10px;
+  margin: 0;
+}
+
+.faqs_content blockquote > :first-child,
+.faqs_content .simditor-body blockquote > :first-child {
+  margin-top: 0;
+}
+
+.faqs_content code,
+.faqs_content .simditor-body code {
+  display: inline-block;
+  padding: 0 4px;
+  margin: 0 5px;
+  background: #eee;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: 'monaco', 'Consolas', 'Liberation Mono', Courier, monospace;
+}
+
+.faqs_content pre,
+.faqs_content .simditor-body pre {
+  padding: 10px 5px 10px 10px;
+  margin: 15px 0;
+  display: block;
+  line-height: 18px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: 'monaco', 'Consolas', 'Liberation Mono', Courier, monospace;
+  white-space: pre;
+  word-wrap: normal;
+  overflow-x: auto;
+}
+
+.faqs_content pre code,
+.faqs_content .simditor-body pre code {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border-radius: 0;
+}
+
+.faqs_content hr,
+.faqs_content .simditor-body hr {
+  display: block;
+  height: 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+.faqs_content table,
+.faqs_content .simditor-body table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 15px 0;
+}
+
+.faqs_content table thead,
+.faqs_content .simditor-body table thead {
+  background-color: #f9f9f9;
+}
+
+.faqs_content table td,
+.faqs_content .simditor-body table td,
+table th,
+.faqs_content .simditor-body table th {
+  min-width: 40px;
+  height: 30px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+  padding: 2px 4px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.faqs_content table td.active,
+.faqs_content .simditor-body table td.active,
+table th.active,
+.faqs_content .simditor-body table th.active {
+  background-color: #ffe;
+}
+
+.faqs_content img,
+.faqs_content .simditor-body img {
+  vertical-align: middle;
+}

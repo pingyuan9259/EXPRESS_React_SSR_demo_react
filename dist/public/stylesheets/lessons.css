@@ -1,0 +1,169 @@
+.lessons_page .home_header {}
+.lessons_page .home_header {
+  background-color: #fff;
+}
+
+.lessons_page {
+  background-color: #fff;
+}
+.lessons_page {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding-top: 105px;
+}
+
+.lessons_list {}
+.lessons_list {
+  position: relative;
+  width: 1030px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.lessons_list > ul {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.lessons_list .lessons_item {
+  float: left;
+  padding: 15px;
+}
+.lessons_list .lessons_item > .card {
+  position: relative;
+  z-index: 1;
+  width: 310px;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #E9EFF4;
+  transition: all 0.4s ease-out;
+}
+.lessons_list .lessons_item > .card:hover {
+  border: 1px solid #DEE1E2;
+}
+.lessons_list .lessons_item > .card:hover .lesson_cover > img {
+  transform: scale(1.25);
+  transition: all 8s ease-out;
+  position: relative;
+  z-index: 0;
+}
+.lessons_list .lessons_item > .card > .lesson_cover {
+  height: 200px;
+  background-color: #e0e6e6;
+  overflow: hidden;
+}
+.lessons_list .lessons_item > .card > .lesson_cover > img {
+  width: 100%;
+  transition: all 0.4s ease-out;
+}
+.lessons_list .lessons_item > .card > .lesson_desc {
+  padding: 0 20px;
+  text-align: left;
+}
+.lessons_list .lessons_item > .card > .lesson_desc > h3 {
+  font-size: 20px;
+  line-height: 20px;
+  height: 20px;
+  color: #333;
+  margin: 22px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lessons_list .lessons_item > .card > .lesson_desc > span {
+  display: block;
+  line-height: 12px;
+  font-size: 12px;
+  height: 12px;
+  color: #999;
+  margin-bottom: 25px;
+}
+.lessons_list .lessons_item > .card > .lesson_desc .teacher_info {
+  position: relative;
+  padding-left: 58px;
+  margin-bottom: 25px;
+}
+.lessons_list .lessons_item > .card > .lesson_desc .teacher_info > img {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+}
+.lessons_list .lessons_item > .card > .lesson_desc .teacher_info > span {
+  display: block;
+  font-size: 12px;
+  line-height: 22px;
+  height: 22px;
+  color: #999;
+}
+.lessons_list .lessons_item > .card > .lesson_desc .teacher_info .teacher_name {
+  color: #333;
+}
+.lessons_list .lessons_item > .card > .lesson_desc .lesson_is_living {
+  color: #fd9b66;
+}
+.lessons_list .tip {
+  padding: 15vh 0;
+}
+
+.pagination {}
+.pagination {
+  position: relative;
+  z-index: 999;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.pagination .item {
+  display: inline-block;
+  cursor: pointer;
+}
+.pagination .item a {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 16px;
+  color: #4DA1FF;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.pagination .item a:hover {
+  color: #2c97d2;
+  transition: all 0.2s ease-in-out;
+}
+.pagination .item .active {
+  color: #999;
+  cursor: default;
+}
+.pagination .item .active:hover {
+  color: #999;
+}
+.pagination .item .disabled {
+  color: #ccc;
+  cursor: default;
+}
+.pagination .item .disabled:hover {
+  color: #ccc;
+}
+@media screen and (max-width: 1280px) {
+  .pagination {
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1439px) {
+  .pagination {
+    margin-right: 25px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .pagination {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<%- partial('_head') %>
+<body>
+<div class="lesson_details_page">
+  <%- partial('_header') %>
+
+    <section class="banners_container">
+      <div class="banners">
+        <div class="br_banner">
+          <img src="<%=(courseInfo.avatar)%>" alt="<%=pageTitle%>" class="cover">
+        </div>
+      </div>
+    </section>
+
+    <section class="lessonInfo">
+      <h2><%=(courseInfo.name)%></h2>
+      <span class="icon-gold-coin" style="marginRight: 5px;"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span>
+      <%if (courseInfo.price) {%>
+        <span class="price"><%=(courseInfo.price)%></span>
+      <%} else {%>
+        <span class="free">免费</span>
+      <%}%>
+
+      <%if (!courseInfo.memberPrice && courseInfo.price) {%>
+        <span class="members_price">会员免费</span>
+      <%}%>
+
+      <%if (courseInfo.memberPrice && (courseInfo.memberPrice < courseInfo.price)) {%>
+        <span class="members_price"><%=('会员减 ' + (courseInfo.price - courseInfo.memberPrice))%></span>
+      <%}%>
+      <p class="date">报名截止时间：<%=(courseInfo._signupDeadline)%></p>
+    </section>
+
+    <div class="buy">
+      <%if (courseInfo._signupDeadline !== '已截止') {%>
+        <a href="//web<%=ENV%>.xinshengdaxue.com/login" class="btn_solid_large">我要报名</a>
+      <%} else {%>
+        <span class="btn_solid_large">报名已截止</span>
+      <%}%>
+    </div>
+
+    <%if (features.length && courseInfo.type === 1) {%>
+      <section class="features">
+        <h3>我能学到什么</h3>
+        <ul class="features_list">
+          <%features.forEach(function (item) {%>
+            <li class="features_item">
+              <h4>
+                <span class="icon-medal"></span>
+                <%=(item['2'])%>
+              </h4>
+              <p><%=(item['3'])%></p>
+            </li>
+          <%})%>
+        </ul>
+      </section>
+    <%}%>
+
+    <%if (banners.length && courseInfo.type === 2) {%>
+      <section class="desc_pic">
+        <ul class="desc_pic_list">
+          <%banners.forEach(function (item) {%>
+            <li class="desc_pic_item">
+              <img src="<%=item%>" alt="<%=pageTitle%>">
+            </li>
+          <%})%>
+        </ul>
+      </section>
+    <%}%>
+
+    <%if (outlines.length) {%>
+      <section class="outlines">
+        <h3>课程大纲</h3>
+        <ul class="outlines_list">
+          <%outlines.forEach(function (item) {%>
+            <li class="outlines_item">
+              <img src="<%=(item['1'])%>" alt="<%=pageTitle%>">
+              <h4><%=(item['2'])%></h4>
+              <p><%=(item['3'])%></p>
+            </li>
+          <%})%>
+        </ul>
+      </section>
+    <%}%>
+
+    <%if (teacherIntros.length) {%>
+      <section class="teacher_intros">
+        <ul class="intros_list">
+          <%teacherIntros.forEach(function (item) {%>
+            <li class="intros_item">
+              <div class="teacher_avatar">
+                <img src="<%=(item._avatar)%>" alt="<%=pageTitle%>">
+              </div>
+              <div class="teacher_desc">
+                <h3>授课老师</h3>
+                <h3 class="bold"><%=(item.teacherName || '暂无')%></h3>
+                <p><%-(item._introduction || '暂无介绍')%></p>
+              </div>
+            </li>
+          <%})%>
+        </ul>
+      </section>
+    <%}%>
+
+    <%if (faqs.length) {%>
+      <section class="faqs">
+        <h3>常见问题</h3>
+        <ul class="faqs_list">
+          <%faqs.forEach(function (item) {%>
+            <li class="faqs_item">
+              <h4><%=(item['1'])%></h4>
+              <p><%=(item['2'])%></p>
+            </li>
+          <%})%>
+        </ul>
+      </section>
+    <%}%>
+
+    <div class="buy">
+      <%if (courseInfo._signupDeadline !== '已截止') {%>
+        <a href="//web<%=ENV%>.xinshengdaxue.com/login" class="btn_solid_large">我要报名</a>
+      <%} else {%>
+        <span class="btn_solid_large">报名已截止</span>
+      <%}%>
+    </div>
+  </div>
+
+  <%- partial('_footer') %>
+</div>
+</body>
+</html>

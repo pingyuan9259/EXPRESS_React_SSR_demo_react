@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<%- partial('_head') %>
+<body>
+<div class="home_page">
+  <%- partial('_header') %>
+
+  <div class="banners_container" id="home_banner">
+    <div class="video_banner">
+      <div class="mash"></div>
+      <div class="dynamic" id="video_dynamic">
+        <video
+          id="video"
+          loop
+          preload="meta"
+          muted="true"
+          poster="https://o4a7cbihz.qnssl.com/cover/a1b0801d-102a-4d8e-b3a5-b911d5881aae?imageView2/5/w/1920/h/1080">
+          <source src="https://o3pvuu23u.qnssl.com/webm/tinfinite.webm" type="video/webm">
+          <source src="https://o3pvuu23u.qnssl.com/mp4/tinfinite.mp4" type="video/mp4">
+          您的浏览器暂时不支持展示视频信息
+        </video>
+
+        <div class="center title" id="video_title">
+          <span class="title_1" id="title_1" style="display: none;">学到</span>
+          <span class="title_2" id="title_2" style="display: none;">不如</span>
+          <span class="icon-dash" id="icon-dash" style="display: none;"></span>
+          <span class="correct" id="correct" style="display: none;">做到</span>
+        </div>
+
+        <transition name="fade-slow">
+          <p class="content" id="video_content"></p>
+        </transition>
+      </div>
+
+      <!-- 适配手机端浏览 -->
+      <div class="static hidden" id="video_static">
+        <img
+          alt="<%=pageTitle%>"
+          class="img1"
+          src="//o4a7cbihz.qnssl.com/picture/78edf313-b8d6-4eb3-9052-e6767634c6ac">
+        <img
+          alt="<%=pageTitle%>"
+          class="img2"
+          src="//o4a7cbihz.qnssl.com/picture/314a976c-4f7c-4453-a42a-e70ac9c635ce">
+        <img
+          alt="<%=pageTitle%>"
+          class="img3"
+          src="//o4a7cbihz.qnssl.com/picture/60d1406f-9ff4-475d-9b3b-900f20e1a421">
+        <img
+          alt="<%=pageTitle%>"
+          class="img4"
+          src="//o4a7cbihz.qnssl.com/picture/af7f0f27-66aa-4dc9-8742-58dfa4103e97">
+      </div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <div class="card">
+      <h3>学到不如做到</h3>
+      <p>学代码就要写，学英语就要用，学东西就要践行，只有实践才是真正的成长</p>
+      <ul>
+        <li class="intro_card">
+          <span class="icon-smile"></span>
+          <h4>课程直播</h4>
+          <p>享受在线课程直播，与老师实时互动</p>
+        </li>
+        <li class="intro_card">
+          <span class="icon-danao"></span>
+          <h4>课后实践</h4>
+          <p>课后辅导及答疑解惑，跟踪学习进度</p>
+        </li>
+        <li class="intro_card">
+          <span class="icon-shijian"></span>
+          <h4>学习社区</h4>
+          <p>找到志同道合的学习伙伴，互相督促</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="lessons">
+    <h3>推荐课程</h3>
+    <div class="lessons_list">
+      <ul>
+        <%for (var i = 0; i < courses.length; i++){%>
+          <li
+            onclick="window.location.href = '/details?course_id=<%=(courses[i].id)%>'"
+            class="lessons_item">
+            <div class="card">
+              <div class="lesson_cover">
+                <img
+                  alt="<%=pageTitle%>"
+                  src="<%=(courses[i]._avatar)%>">
+              </div>
+              <div class="lesson_desc">
+                <h3 class="lesson_name"><%=(courses[i].name || '未命名课程')%></h3>
+                <span class="lesson_date">
+                  <%=('上课时间：' + (courses[i]._beginAt + ' - ' + courses[i]._endAt) || '暂无上课时间')%>
+                </span>
+
+                <div class="teacher_info">
+                  <img
+                    alt="<%=pageTitle%>"
+                    src="<%=(courses[i].teacherIntro.content)%>">
+                  <span>授课老师：</span>
+                  <span class="teacher_name no_warp">
+                    <%=((courses[i].teacherIntro.teacherName) || '暂无')%>
+                  </span>
+                </div>
+              </div>
+            <div>
+          </li>
+        <%}%>
+      </ul>
+    </div>
+  </div>
+
+  <div class="app_end" id="download_app">
+    <div class="card">
+      <a ref="appEndAnchor"  class="app_end_anchor"></a>
+      <div class="app_intro">
+        <h3>移动学习平台</h3>
+        <p>把课堂装进口袋，把知识装进脑袋，碎片化时代，随时随地在线学习</p>
+        <a
+          href="https://itunes.apple.com/us/app/xin-sheng-da-xue/id1087250503?l=zh&ls=1&mt=8"
+          target="_blank"
+          class="download_ios btn_hollow_large">iPhone</a>
+        <a
+          href="http://m.xinshengdaxue.com/app_download.html"
+          target="_blank"
+          class="download_android btn_hollow_large">Android</a>
+      </div>
+      <img
+        alt="<%=pageTitle%>"
+        src="https://o4a7cbihz.qnssl.com/picture/a6f933c0-3e58-4e0f-8c21-6a1d4b999eb1"
+        class="phone1">
+      <img
+        alt="<%=pageTitle%>"
+        src="https://o4a7cbihz.qnssl.com/picture/f3817397-82f4-44fd-a329-4b222b5b8ce3"
+        class="phone2">
+      <img
+        alt="<%=pageTitle%>"
+        src="https://o4a7cbihz.qnssl.com/picture/e554acdb-6865-4ac5-862c-60c2a6b0ad8c"
+        class="phone3">
+    </div>
+  </div>
+
+  <div class="join">
+    <h3>成为新生大学会员</h3>
+    <div class="card">
+      <h4 class="price">4588元</h4>
+      <div class="desc">
+        <div class="item">
+          <!-- <span class="icon-medal"></span> -->
+          <p><span>送新生币</span>购买会员赠送4588新生币</p>
+        </div>
+        <div class="item">
+          <!-- <span class="icon-medal"></span> -->
+          <p><span>课程免费</span>新生大学不定期为您提供免费精品课程</p>
+        </div>
+        <div class="item">
+          <!-- <span class="icon-medal"></span> -->
+          <p><span>独享优惠</span>收费课程价格减免、主题演讲门票优惠</p>
+        </div>
+        <div class="item">
+          <!-- <span class="icon-medal"></span> -->
+          <p><span>专属活动</span>免费参加新生大学在各大城市举办的同学会</p>
+        </div>
+        <div class="item">
+          <!-- <span class="icon-medal"></span> -->
+          <p><span>优先权利</span>优先参加合作课程</p>
+        </div>
+      </div>
+      <a href="//web<%=ENV%>.xinshengdaxue.com/login" class="buy btn_hollow">购买会员</a>
+    </div>
+    <div class="boys_and_girls">
+      <div class="group_A">
+        <span class="icon-girl2">
+        <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span><span class="path22"></span><span class="path23"></span><span class="path24"></span><span class="path25"></span><span class="path26"></span><span class="path27"></span>
+        </span>
+
+        <span class="icon-boy2">
+        <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span>
+        </span>
+
+        <span class="icon-boy1" style="margin-right: 0;">
+        <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span><span class="path22"></span><span class="path23"></span><span class="path24"></span><span class="path25"></span><span class="path26"></span><span class="path27"></span><span class="path28"></span><span class="path29"></span><span class="path30"></span><span class="path31"></span>
+        </span>
+      </div>
+
+      <div class="group_B">
+        <span class="icon-girl1" style="margin-left: 0;">
+        <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span><span class="path22"></span><span class="path23"></span><span class="path24"></span>
+        </span>
+        <span class="icon-boy3">
+        <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span><span class="path22"></span><span class="path23"></span><span class="path24"></span><span class="path25"></span><span class="path26"></span><span class="path27"></span><span class="path28"></span><span class="path29"></span>
+        </span>
+
+        <span class="icon-boy4">
+        <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <%- partial('_footer') %>
+</div>
+</body>
+</html>
+
+<script>
+  $(function () {
+    var timer = null;
+    var canPlay = false;
+    var video = $('#video');
+    var videoContent = $('#video_content');
+    var videoDynamic = $('#video_dynamic');
+    var videoStatic = $('#video_static');
+    var isPc = true;
+    var startAnimationReady = false;
+    var playing = false;
+
+    function videoEvent (event, callback) {
+      video[0].addEventListener(event, callback)
+    };
+
+    function timeDelay (callback, time) {
+      return new Promise((resolve, reject) => {
+        timer = setTimeout(function () {
+          callback && callback()
+          timer = null
+          return resolve()
+        }, time)
+      })
+    };
+
+    function initTitle () {
+      timeDelay(function () {
+        $('#title_1').fadeIn()
+      }, 300).then(function () {
+        timeDelay(function () {
+          $('#title_2').fadeIn()
+        }, 700).then(function () {
+          timeDelay(function () {
+            startAnimationReady = true
+            if (canPlay) {
+              $('#icon-dash').fadeIn()
+              $('#correct').fadeIn()
+              $('#video_title').removeClass('center');
+              video[0].play()
+              playing = true
+            }
+          }, 700)
+        })
+      })
+    };
+
+    function addContent () {
+      timeDelay(function () {
+        videoContent.fadeIn(500)
+        videoContent.html('学语言才不是为了考试<br>是为了与世界多一个交流的维度');
+      }, 1000).then(function () {
+
+        timeDelay(function () {
+          videoContent.fadeOut()
+        }, 4000).then(function () {
+
+          timeDelay(function () {
+            videoContent.fadeIn()
+            videoContent.html('从0到1赋予代码生命<br>用思维和指尖创造世界');
+          }, 2000).then(function () {
+
+            timeDelay(function () {
+              videoContent.fadeOut()
+            }, 4000).then(function () {
+
+              timeDelay(function () {
+                videoContent.fadeIn()
+                videoContent.html('没有人是天生的演讲者<br>从现在起让听众欲罢不能');
+              }, 3000).then(function () {
+
+                timeDelay(function () {
+                  videoContent.fadeOut()
+                }, 4000).then(function () {
+
+                  timeDelay(function () {
+                    videoContent.fadeIn()
+                    videoContent.html('发现躺在字里行间的财富<br>普通人最容易掌握的赚钱技能');
+                  }, 3000).then(function () {
+
+                    timeDelay(function () {
+                      videoContent.fadeOut()
+                    }, 7000)
+                  })
+                })
+              })
+            })
+          })
+        })
+      })
+    }
+
+    // 判断浏览设备
+    function getPcFlag () {
+      var userAgentInfo = navigator.userAgent
+      var Agents = ['Android', 'iPhone', 'SymbianOS', 'Windows Phone', 'iPad', 'iPod']
+      for (var item of Agents) {
+        if (userAgentInfo.indexOf(item) > 0) {
+          isPc = false
+          break
+        }
+      }
+    };
+
+    function mounted () {
+      // 如果是不是pc浏览器的话，阻断视频播放
+      if (!isPc) {
+        videoDynamic.addClass('hidden')
+        videoStatic.removeClass('hidden')
+        var index = 1;
+        timer = setInterval(function () {
+          videoStatic.children('.img' + index).addClass('active').siblings.removeClass('active');
+          if (index === 3) {
+            index = 0
+            return
+          } else {
+            index++
+          }
+        }, 5000)
+        return
+      }
+
+      videoEvent('canplay', function () {
+        canPlay = true
+        if (startAnimationReady && !playing) {
+          $('#icon-dash').fadeIn()
+          $('#correct').fadeIn()
+          $('#video_title').removeClass('center');
+          video[0].play()
+        }
+      });
+      initTitle();
+      videoEvent('play', addContent)
+      videoEvent('playing', addContent)
+      videoEvent('ended', function () {
+        timer = null
+      })
+    }
+
+    mounted();
+
+    window.addEventListener('scroll', function () {
+      $('#header').css('backgroundColor', 'rgba(255,255,255,' + window.scrollY / video.height() + ')');
+      $('#header').css('marginLeft', '-' + window.scrollX + 'px');
+    })
+  })
+</script>

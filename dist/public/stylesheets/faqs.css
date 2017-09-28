@@ -1,0 +1,51 @@
+@import url(simditor-body.css);
+.faqs_page .header_pannel .home_header {
+  background-color: #fff;
+}
+.faqs_page .faqs_content {
+  min-height: calc(100vh - 191px);
+  overflow: hidden;
+  margin-top: 80px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #EBEEF3;
+}
+.faqs_page .faqs_row {
+  display: inline-block;
+  text-align: left;
+  width: 1000px;
+  border-top: 1px solid #EBEEF3;
+  padding: 20px 0;
+}
+.faqs_page .faqs_row .faqs_item {
+  color: #6C7C8B;
+  cursor: pointer;
+}
+.faqs_page .faqs_row .faqs_item:hover > span {
+  opacity: 1;
+}
+.faqs_page .faqs_row .arrow {
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  font-size: 10px;
+  color: #8CA0B3;
+  transition: all .1s linear;
+  margin-left: 10px;
+}
+.faqs_page .faqs_row .up {
+  transform: rotate(90deg) scale(0.7);
+}
+.faqs_page .faqs_row .down {
+  transform: rotate(270deg) scale(0.7);
+}
+.faqs_page .faqs_row:first-child {
+  border: none;
+}
+.faqs_page .faqs_details {
+  margin: 20px 0;
+  background-color: #f9fafc;
+  padding: 35px 40px;
+  color: #6C7C8B;
+  border-radius: 6px;
+}

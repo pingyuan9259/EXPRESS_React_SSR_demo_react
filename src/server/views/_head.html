@@ -1,0 +1,45 @@
+<head>
+  <!-- meta -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <!-- see http://smerity.com/articles/2013/where_did_all_the_http_referrers_go.html -->
+  <meta name="referrer" content="always">
+  <meta name="description" content="<%=pageDesc%>">
+  <meta name="keywords" content="<%=pageKeywords%>">
+  <title><%=pageTitle%></title>
+  <link rel="icon" type="image/png" href="//o4a7cbihz.qnssl.com/picture/b23784eb-f1e4-44ea-811b-af333e4978bc" sizes="32x32">
+  <!-- style -->
+  <link rel="stylesheet" href="/public/stylesheets/reset.css">
+  <link rel="stylesheet" href="/public/stylesheets/common.css">
+  <link rel="stylesheet" href="/public/stylesheets/iconfont/style.css">
+  <link rel="stylesheet" href="<%=pageStylePath%>">
+
+  <!-- 百度统计 -->
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?a555a891af5813386283fbf214d9eb3b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
+  <!-- scripts -->
+  <script src="/public/libs/jquery.js"></script>
+  <script>
+    function getCookie (name) {
+      let reg = new RegExp('(^| )' + name + '=([^;]*)(;|$)')
+      let arr = document.cookie.match(reg)
+      if (arr) {
+        return (arr[2])
+      } else {
+        return null
+      }
+    };
+
+    if (getCookie('<%=APP_TOKEN_KEY%>')) {
+      window.location.replace('//web<%=ENV%>.xinshengdaxue.com');
+    }
+  </script>
+</head>

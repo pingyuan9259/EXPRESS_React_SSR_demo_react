@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<%- partial('_head') %>
+<body>
+<div class="lessons_page">
+  <%- partial('_header') %>
+
+  <div class="lessons">
+    <div class="lessons_list">
+      <ul>
+        <%for (var i = 0; i < courses.length; i++){%>
+          <li
+            onclick="window.location.href = '/details/<%=(courses[i].id)%>'"
+            class="lessons_item">
+            <div class="card">
+              <div class="lesson_cover">
+                <img src="<%=(courses[i]._avatar)%>" alt="<%=pageTitle%>">
+              </div>
+              <div class="lesson_desc">
+                <h3 class="lesson_name"><%=(courses[i].name || '未命名课程')%></h3>
+                <span class="lesson_date">
+                  <%=('上课时间：' + (courses[i]._beginAt + ' - ' + courses[i]._endAt) || '暂无上课时间')%>
+                </span>
+
+                <div class="teacher_info">
+                  <img src="<%=(courses[i].teacherIntro.content)%>" alt="<%=pageTitle%>">
+                  <span>授课老师：</span>
+                  <span class="teacher_name no_warp">
+                    <%=((courses[i].teacherIntro.teacherName) || '暂无')%>
+                  </span>
+                </div>
+              </div>
+            <div>
+          </li>
+        <%}%>
+
+        <div class="pagination" id="pagination">
+          <ul class="page-list">
+            <%for (var i = 0, len = pageItem.length; i < len; i++) {%>
+              <li class="item">
+                <a href="/lessons/<%=(pageItem[i].page)%>" page="<%=(i + 1)%>"><%=(pageItem[i].page)%></a>
+              </li>
+            <%}%>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <%- partial('_footer') %>
+</div>
+</body>
+</html>
+<script>
+  $(function () {
+    var showPagination = <%=showPagination%>;
+    var curPage = <%=curPage%>;
+    var $pageBtn = $('#pagination .item a');
+
+    for (var i = 0, len = $pageBtn.length; i < len; i++) {
+      if ($($pageBtn[i]).attr('page') == curPage) {
+        $($pageBtn[i]).addClass('active');
+      }
+    }
+  });
+</script>

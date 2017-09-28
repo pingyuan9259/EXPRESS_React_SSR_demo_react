@@ -1,0 +1,216 @@
+.lesson_details_page .home_header {}
+.lesson_details_page .home_header {
+  background-color: #fff;
+}
+
+.lesson_details_page {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.lesson_details_page section {
+  width: 1000px;
+  display: inline-block;
+}
+.lesson_details_page h2 {
+  font-size: 32px;
+  line-height: 50px;
+  color: #28313B;
+}
+.lesson_details_page h3 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #28313B;
+}
+.lesson_details_page h4 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  color: #28313B;
+}
+.lesson_details_page p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #6D8090;
+}
+.lesson_details_page > .buy {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.lesson_details_page > .buy > a {
+  background-color: #2ECC71;
+}
+.lesson_details_page > .teacher {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.lesson_details_page > .teacher > a {
+  background-color: #3398DB;
+}
+.lesson_details_page .banners_container {
+  width: 100%;
+  height: 38vw;
+  margin-top: 80px;
+}
+.lesson_details_page .lessonInfo > h2 {
+  margin: 35px 0;
+}
+.lesson_details_page .lessonInfo .price,
+.lesson_details_page .lessonInfo .free,
+.lesson_details_page .lessonInfo .members_price,
+.lesson_details_page .lessonInfo .icon-gold-coin {
+  font-size: 16px;
+  font-weight: bold;
+}
+.lesson_details_page .lessonInfo .free {
+  color: #2ECC71;
+}
+.lesson_details_page .lessonInfo .members_price {
+  color: #2ECC71;
+  font-weight: normal;
+  margin-left: 50px;
+}
+.lesson_details_page .lessonInfo .date {
+  color: #9BA3AF;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 35px;
+}
+.lesson_details_page .features {
+  margin-bottom: 40px;
+}
+.lesson_details_page .features > h3 {
+  margin: 40px 0;
+}
+.lesson_details_page .features .features_item {
+  float: left;
+  text-align: left;
+  width: 430px;
+  margin-right: 130px;
+  margin-bottom: 40px;
+}
+.lesson_details_page .features .features_item > h4 {
+  margin: 20px 0;
+}
+.lesson_details_page .features .features_item > h4 > span {
+  position: relative;
+  top: 2px;
+  font-size: 18px;
+  margin-right: 8px;
+}
+.lesson_details_page .features .features_item > p {
+  padding-left: 30px;
+  line-height: 25px;
+}
+.lesson_details_page .features .features_item:nth-child(2n) {
+  margin-right: 0;
+}
+.lesson_details_page .desc_pic .desc_pic_item > img {
+  border-radius: 6px;
+  margin-bottom: 40px;
+}
+.lesson_details_page .outlines {
+  margin-bottom: 100px;
+}
+.lesson_details_page .outlines > h3 {
+  margin: 40px 0;
+}
+.lesson_details_page .outlines .outlines_item {
+  display: inline-block;
+  margin-bottom: 25px;
+  width: 750px;
+  height: 65px;
+  text-align: left;
+  border: 1px solid #E9EFF4;
+  border-radius: 7px;
+  padding: 40px 45px;
+}
+.lesson_details_page .outlines .outlines_item > img {
+  float: left;
+  width: 65px;
+  height: 65px;
+  border-radius: 32.5px;
+  margin-right: 30px;
+}
+.lesson_details_page .outlines .outlines_item > h4 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.lesson_details_page .teacher_intros {
+  margin-bottom: 100px;
+}
+.lesson_details_page .teacher_intros .intros_item {
+  display: table;
+  text-align: left;
+}
+.lesson_details_page .teacher_intros .intros_item .teacher_avatar {
+  display: table-cell;
+  width: 380px;
+}
+.lesson_details_page .teacher_intros .intros_item .teacher_avatar > img {
+  width: 100%;
+}
+.lesson_details_page .teacher_intros .intros_item .teacher_desc {
+  display: table-cell;
+  vertical-align: middle;
+  width: 540px;
+  padding-left: 60px;
+}
+.lesson_details_page .teacher_intros .intros_item .teacher_desc > h3 {
+  margin-bottom: 15px;
+}
+.lesson_details_page .teacher_intros .intros_item .teacher_desc > p {
+  margin-top: 45px;
+  font-size: 15px;
+  line-height: 30px;
+}
+.lesson_details_page .faqs {
+  margin-bottom: 80px;
+}
+.lesson_details_page .faqs > h3 {
+  margin: 40px 0;
+}
+.lesson_details_page .faqs .faqs_item {
+  float: left;
+  text-align: left;
+  width: 370px;
+  margin-right: 200px;
+  margin-bottom: 40px;
+}
+.lesson_details_page .faqs .faqs_item > h4 {
+  margin: 20px 0;
+  line-height: 25px;
+}
+.lesson_details_page .faqs .faqs_item > p {
+  color: #9BA3AF;
+  line-height: 25px;
+}
+.lesson_details_page .faqs .faqs_item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.lesson_details_page .banners {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.lesson_details_page .banners > .br_banner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.lesson_details_page .banners > .br_banner .cover {
+  display: block;
+  width: 100%;
+}

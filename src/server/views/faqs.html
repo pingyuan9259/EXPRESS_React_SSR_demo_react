@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<%- partial('_head') %>
+<body>
+<div class="faqs_page">
+  <%- partial('_header') %>
+
+  <div class="faqs_content" id="faqs_content">
+    <ul>
+      <%for (var i = 0; i < faqs.length; i++){%>
+        <li class="faqs_row">
+          <a class="faqs_item">
+            <%=(faqs[i].index + '. ' + faqs[i].title)%>
+            <span class="icon-arrow-left2 arrow down" id="arrow"></span>
+          </a>
+          <div class="faqs_details simditor-body" style="display: none;">
+            <%-(faqs[i].detail.content)%>
+          </div>
+        </li> 
+      <%}%>
+    </ul>
+  </div>
+
+  <%- partial('_footer') %>
+</div>
+</body>
+</html>
+
+<script>
+  $(function () {
+    $('#faqs_content').on('click', '.faqs_item', function () {
+      if ($(this).siblings().css('display') === 'none') {
+        $('#faqs_content .faqs_details').fadeOut(0);
+        $(this).siblings().fadeIn();
+        $(this).find('#arrow').removeClass('down').addClass('up');
+      } else {
+        $(this).siblings().fadeOut();
+        $(this).find('#arrow').removeClass('up').addClass('down');
+      }
+    });
+  });
+</script>

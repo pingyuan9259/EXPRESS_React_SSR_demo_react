@@ -1,0 +1,322 @@
+[v-cloak] {
+  display: none;
+}
+
+// header
+.header_pannel .home_header {}
+.header_pannel .home_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  padding: 20px 0;
+  text-align: center;
+  min-width: 1238px;
+  transition: all .5s linear;
+}
+.header_pannel .home_header .header_content {
+  display: inline-block;
+  text-align: left;
+  width: 1000px;
+}
+.header_pannel .home_header .header_content .logo {
+  float: left;
+}
+.header_pannel .home_header .header_content .logo > a {
+  height: 40px;
+}
+.header_pannel .home_header .header_content .logo > a img {
+  position: relative;
+  top: -6px;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+.header_pannel .home_header .header_content .logo > a span {
+  position: relative;
+  top: -12px;
+  font-size: 16px;
+  color: #393D54;
+}
+.header_pannel .home_header .header_content .nav {
+  float: left;
+  margin-left: 50px;
+}
+.header_pannel .home_header .header_content .nav .nav_item {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+.header_pannel .home_header .header_content .nav .nav_item > a {
+  cursor: pointer;
+  line-height: 40px;
+  color: #28313B;
+}
+.header_pannel .home_header .header_content .my_lessons {
+  float: right;
+  color: #fff;
+  background-color: #2ECC71;
+}
+.header_pannel .home_header .header_content .download_app,
+.header_pannel .home_header .header_content .login,
+.header_pannel .home_header .header_content .logout {
+  cursor: pointer;
+  float: right;
+  margin-right: 50px;
+  color: #28313B;
+  line-height: 40px;
+}
+.header_pannel .home_header .header_content .download_app {
+  margin-right: 30px;
+  line-height: 40px;
+}
+.header_pannel .user_header {
+  left: 200px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  min-width: 1030px;
+}
+.header_pannel .user_header .logo {
+  display: inline-block;
+  transition: all 0.2s ease-out;
+}
+.header_pannel .user_header .logo > a > img {
+  width: 50px;
+  height: 50px;
+}
+.header_pannel .user_header .logo:hover {
+  opacity: 0.9;
+}
+
+// footer
+.footer_pannel {}
+.footer_pannel {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #fff;
+}
+.footer_pannel .footer_content {
+  display: inline-block;
+  width: 1000px;
+  height: 40px;
+}
+.footer_pannel .footer_content .logo {
+  float: left;
+  margin-top: 3px;
+}
+.footer_pannel .footer_content .logo > a {
+  height: 32px;
+}
+.footer_pannel .footer_content .logo > a img {
+  position: relative;
+  top: -6px;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.footer_pannel .footer_content .logo > a span {
+  position: relative;
+  top: -10px;
+  font-size: 14px;
+  color: #393D54;
+}
+.footer_pannel .footer_content .lisence {
+  float: left;
+  font-size: 12px;
+  line-height: 40px;
+  color: #859192;
+  margin-left: 15px;
+}
+
+.footer_pannel .footer_content .footer_nav {
+  position: relative;
+  top: 3px;
+  width: 90px;
+  text-align: center;
+  height: 34px;
+  line-height: 34px;
+  float: right;
+  font-size: 14px;
+  color: #28313B;
+}
+
+.tip > p {
+  text-align: center;
+  font-size: 18px;
+  color: #474F58;
+}
+.tip > p > .tip_head {
+  position: relative;
+  top: -10px;
+  left: -10px;
+  color: #9BA3AF;
+}
+.visibility {
+  opacity: 1 !important;
+}
+.bold {
+  font-weight: bold !important;
+}
+.text_center {
+  text-align: center !important;
+}
+.pull_right {
+  float: right;
+}
+.pull_left {
+  float: left;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.hidden {
+  display: none !important;
+}
+.unoverflow {
+  overflow: hidden;
+}
+.inline_block {
+  display: inline-block;
+}
+.no_warp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.btn_solid,
+.btn_solid_small,
+.btn_solid_large {
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #ccc;
+  transition: all .1s linear;
+}
+.btn_solid {
+  padding: 0 20px;
+  height: 38px;
+  line-height: 38px;
+}
+.btn_solid_small {
+  font-size: 14px;
+  padding: 0 12px;
+  height: 30px;
+  line-height: 30px;
+}
+.btn_solid_large {
+  font-size: 14px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 6px;
+  padding: 0 40px;
+}
+.btn_solid:hover,
+.btn_solid_large:hover,
+.btn_solid_small:hover {
+  opacity: 0.9;
+}
+.btn_solid_disabled {
+  background-color: #ccc !important;
+  cursor: default !important;
+}
+.btn_hollow,
+.btn_hollow_small,
+.btn_hollow_large {
+  cursor: pointer;
+  display: inline-block;
+  color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  transition: all .1s linear;
+}
+.btn_hollow {
+  padding: 0 19px;
+  height: 36px;
+  line-height: 36px;
+}
+.btn_hollow_small {
+  font-size: 14px;
+  padding: 0 11px;
+  height: 28px;
+  line-height: 28px;
+}
+.btn_hollow_large {
+  font-size: 14px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 6px;
+  padding: 0 40px;
+}
+.btn_hollow_large:hover,
+.btn_hollow:hover,
+.btn_hollow_small:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.btn_hollow_disabled {
+  color: #ccc !important;
+  border-color: #ccc !important;
+  cursor: default !important;
+}
+.alt {
+  position: relative;
+}
+.alt > span {
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  padding: 4px 5px;
+  background-color: #ccc;
+  color: #fff;
+  font-size: 13px;
+  line-height: 13px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: all .1s linear;
+}
+.alt:hover > span {
+  animation: delayFade 1s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes delayFade {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+.rotate {
+  position: absolute;
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.blur {
+  filter: blur(15px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);
+  /* IE6~IE9 */
+}
